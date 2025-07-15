@@ -59,56 +59,42 @@ header {
   color: white;
 }
 
-/* Seção das donas */
-.donas {
+/* Conteúdo */
+.conteudo {
   padding: 40px 20px;
-  text-align: center;
-}
-
-.donas h2 {
-  color: #ff787e;
-  border-bottom: 2px solid #ffabaf;
-  display: inline-block;
-  padding-bottom: 5px;
-  margin-bottom: 40px;
-  font-family: 'Times New Roman', serif;
-}
-
-.dona-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
-.dona {
-  background-color: #ffdee0;
-  padding: 25px;
-  border-radius: 12px;
-  width: 300px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  text-align: center;
+.conteudo section {
+  margin-bottom: 40px;
 }
 
-.dona img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #ffabaf;
+.conteudo h2 {
+  color: #ff787e;
+  font-size: 1.6em;
   margin-bottom: 15px;
 }
 
-.dona h3 {
-  color: #ff9297;
-  margin: 0 0 10px;
+.conteudo ul {
+  padding-left: 20px;
+  list-style-type: disc;
 }
 
-.dona p {
-  font-size: 0.95em;
+.conteudo ul ul {
+  list-style-type: circle;
+}
+
+.conteudo li {
+  margin-bottom: 8px;
+  font-size: 1em;
   color: #444;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ffabaf;
+  margin: 30px 0;
 }
 
 footer {

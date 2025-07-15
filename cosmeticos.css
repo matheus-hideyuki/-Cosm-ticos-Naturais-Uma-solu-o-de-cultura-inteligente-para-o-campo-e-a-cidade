@@ -9,13 +9,14 @@ body {
 header {
   background-color: #ff787e;
   color: white;
-  padding: 30px 20px;
+  padding: 20px;
 }
 
-.linha-topo {
+.topo {
   display: flex;
   align-items: flex-start;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .menu-vertical {
@@ -31,41 +32,42 @@ header {
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1em;
-  text-align: center;
-  width: 130px;
+  font-size: 0.95em;
   transition: background-color 0.2s;
+  text-align: center;
+  width: 120px;
 }
 
 .botao:hover {
   background-color: #ffc5c7;
 }
 
-.titulo-area {
-  flex-grow: 1;
+.titulo {
   text-align: center;
+  flex-grow: 1;
+  min-width: 250px;
 }
 
-.titulo-area h1 {
+.titulo h1 {
   font-family: 'Times New Roman', serif;
-  font-size: 2.5em;
+  font-size: 2.2em;
   margin: 0;
   color: white;
 }
 
 .subtitulo {
   margin-top: 10px;
-  font-size: 1.1em;
+  font-size: 1em;
   color: white;
 }
 
-/* Seção das donas */
-.donas {
+/* Produtos */
+.produtos {
   padding: 40px 20px;
   text-align: center;
 }
 
-.donas h2 {
+.produtos h2 {
   color: #ff787e;
   border-bottom: 2px solid #ffabaf;
   display: inline-block;
@@ -74,41 +76,53 @@ header {
   font-family: 'Times New Roman', serif;
 }
 
-.dona-container {
-  display: flex;
+.produto-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
-.dona {
+.produto {
   background-color: #ffdee0;
-  padding: 25px;
+  padding: 20px;
   border-radius: 12px;
-  width: 300px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
 }
 
-.dona img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
+.produto:hover {
+  transform: translateY(-5px);
+}
+
+.produto img {
+  width: 100%;
+  max-height: 180px;
   object-fit: cover;
+  border-radius: 10px;
   border: 4px solid #ffabaf;
   margin-bottom: 15px;
 }
 
-.dona h3 {
+.produto h3 {
   color: #ff9297;
-  margin: 0 0 10px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
 }
 
-.dona p {
+.produto p {
   font-size: 0.95em;
   color: #444;
+  margin-bottom: 8px;
+}
+
+.produto ul {
+  list-style-type: disc;
+  padding-left: 18px;
+  text-align: left;
+  color: #333;
+  font-size: 0.9em;
 }
 
 footer {
