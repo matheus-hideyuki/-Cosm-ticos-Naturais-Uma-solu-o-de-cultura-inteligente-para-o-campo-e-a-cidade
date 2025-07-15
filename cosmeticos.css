@@ -132,7 +132,6 @@ footer {
   margin-top: 40px;
 }
 
-
 /* Modal */
 .modal-overlay {
   position: fixed;
@@ -176,7 +175,6 @@ footer {
   overflow-y: auto;  /* ativa a rolagem vertical */
   padding-right: 10px;
 }
-
 
 .feedback {
   background-color: #ffdee0;
