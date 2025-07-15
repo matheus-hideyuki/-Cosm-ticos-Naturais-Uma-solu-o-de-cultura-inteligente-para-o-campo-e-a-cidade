@@ -14,6 +14,7 @@
       <div class="menu-vertical">
         <a href="cosmeticos.html" class="botao">Cosméticos</a>
         <a href="objetivo.html" class="botao">Objetivo</a>
+        <a href="#" class="botao" id="abrir-feedback">Feedback</a>
       </div>
 
       <div class="titulo-area">
@@ -47,6 +48,99 @@
   <footer>
     <p>&copy; 2025 Cosméticos Naturais. Todos os direitos reservados.</p>
   </footer>
+
+
+  <div class="modal-overlay" id="modalFeedback">
+    <div class="modal">
+      <span class="fechar-modal" id="fecharModal">&times;</span>
+      <h2>Feedback de Usuários</h2>
+      <div class="feedback-container">
+
+        <div class="feedback">
+          <img src="cj.jpeg" alt="carolejamilli">
+          <p>“Ver o interesse e a participação dos alunos foi incrível. Nosso objetivo sempre foi mostrar que é possível
+            cuidar da pele com ingredientes simples, naturais e acessíveis. Ensinar cada etapa, desde o reconhecimento
+            dos ingredientes até a produção final dos cosméticos, foi gratificante.
+            Sentimos que, mais do que ensinar uma receita, plantamos sementes de consciência sobre autocuidado,
+            sustentabilidade e valorização do que vem da natureza. Ver os alunos colocando a mão na massa, se divertindo
+            e aprendendo de verdade nos mostrou que esse projeto tem um impacto real — e é só o começo!”</p>
+          <span>Caroline e Jamilli</span>
+        </div>
+
+
+        <div class="feedback">
+          <img src="cley.jpeg" alt="preto macaco">
+          <p>"Cleylton, estudante da EEB São João Bosco
+            Gostei da experiência de poder ajudar no trabalho e da ideia que elas tiveram em transformar algo que está
+            no do dia a dia das pessoas em algo sustentável"</p>
+          <span>Cleylton</span>
+        </div>
+
+        <div class="feedback">
+          <img src="bianca.jpeg" alt="bianca">
+          <p>"Bianca, estudante do IFC-Campus Ibirama
+            Os cosméticos são realmente muito bons e são uma nova forma de aprender sobre sustentabilidade, além que as
+            pessoas podem aprender a fazerem em casa, o que torna bem mais fácil"</p>
+          <span>Bianca</span>
+        </div>
+
+
+        <div class="feedback">
+          <img src="arthur.jpeg" alt="arthur">
+          <p>"Arthur, estudante da EEB São João Bosco
+            O projeto delas foi bem interessante e pensado com muito carinho pelas alunas e pela professora, realmente
+            elas se esforçaram muito nesse projeto, ainda mais por ser o último ano na escola"</p>
+          <span>Arthur</span>
+        </div>
+
+        <div class="feedback">
+          <img src="pablo.jpeg" alt="pablo">
+          <p>"Gostei muito do body splash de tangerina com chá concentrado da folha e álcool de cereais. O cheiro é
+            refrescante e natural, ótimo para usar no dia a dia. Além disso, os ingredientes são simples e baratos,
+            então é um produto que vale muito a pena, porque cuida da pele sem pesar no bolso."</p>
+          <span>Pablo</span>
+        </div>
+
+        <div class="feedback">
+          <img src="vitorricardo.jpeg" alt="vitorricardo">
+          <p>Vitor: “Eu achei muito legal aprender a fazer meus próprios cosméticos. Desde conhecer os ingredientes
+            naturais até preparar o esfoliante e a máscara, tudo foi uma experiência nova e divertida.”</p>
+
+          <p>Ricardo: “É verdade! A gente entendeu como tudo funciona, desde o plantio até o produto final. Foi incrível
+            poder criar algo com as próprias mãos e ainda aprender sobre sustentabilidade.”</p>
+
+          <p>Vitor: “Além disso, os produtos são simples e naturais, o que faz a gente querer cuidar da pele de um jeito
+            mais saudável e consciente.”</p>
+
+          <p>Ricardo: “Com certeza, foi um projeto que valeu muito a pena. Aprender na prática é muito mais legal!”</p>
+          <span>Pablo</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <script>
+    const abrirModal = document.getElementById('abrir-feedback');
+    const modal = document.getElementById('modalFeedback');
+    const fecharModal = document.getElementById('fecharModal');
+
+    abrirModal.addEventListener('click', function (e) {
+      e.preventDefault();
+      modal.style.display = 'flex';
+    });
+
+    fecharModal.addEventListener('click', function () {
+      modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function (e) {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  </script>
 
 </body>
 
