@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Cosméticos Naturais</title>
   <link rel="stylesheet" href="homes.css">
+  <link rel="icon" type="image/png" href="imagens/favicon.png">
+
 </head>
 
 <body>
@@ -28,7 +30,7 @@
     <h2>Quem Somos</h2>
     <div class="dona-container">
       <div class="dona">
-        <img src="carol.jpeg" alt="Dona1">
+        <img src="imagens/carol.jpeg" alt="Dona1">
         <h3>Caroline Coelho Lima</h3>
         <p>Caroline Coelho Lima, tem 18 anos, nascida em Indaial no dia 03/07/2007. Carol pensa em cursar Recursos
           Humanos e, em seguida, Comércio Exterior. A participação dela no projeto consistiu na ideia principal de ser
@@ -36,11 +38,11 @@
       </div>
 
       <div class="dona">
-        <img src="jamilli.jpeg" alt="Dona2">
+        <img src="imagens/jamilli.jpeg" alt="Dona2">
         <h3>Jamilli Raimondi</h3>
-        <p>Jamilli Raimondi, tem 17 anos, nascida em Indaial no dia 26/12/2007. Jamilli pensa em cursar Psicologia. A
-          participação dela no projeto consistiu em trazer novas ideias para o processo de conscientização entre o campo
-          e a cidade.</p>
+        <p>Jamilli Raimondi, de 17 anos, nasceu em Indaial em 27 de dezembro de 2007. Pretende seguir a carreira de
+          Psicologia. Sua contribuição no projeto foi essencial ao trazer novas ideias que fortaleceram o processo de
+          conscientização sobre a conexão entre o campo e a cidade.</p>
       </div>
     </div>
   </section>
@@ -49,15 +51,14 @@
     <p>&copy; 2025 Cosméticos Naturais. Todos os direitos reservados.</p>
   </footer>
 
-
   <div class="modal-overlay" id="modalFeedback">
     <div class="modal">
-      <span class="fechar-modal" id="fecharModal">&times;</span>
+    <span class="fechar-modal" id="fecharModal">&times;</span>
       <h2>Feedback de Usuários</h2>
       <div class="feedback-container">
 
         <div class="feedback">
-          <img src="cj.jpeg" alt="carolejamilli">
+          <img src="imagens/cj.jpeg" alt="carolejamilli">
           <p>“Ver o interesse e a participação dos alunos foi incrível. Nosso objetivo sempre foi mostrar que é possível
             cuidar da pele com ingredientes simples, naturais e acessíveis. Ensinar cada etapa, desde o reconhecimento
             dos ingredientes até a produção final dos cosméticos, foi gratificante.
@@ -69,7 +70,7 @@
 
 
         <div class="feedback">
-          <img src="cley.jpeg" alt="preto macaco">
+          <img src="imagens/cley.jpeg" alt="preto macaco">
           <p>"Cleylton, estudante da EEB São João Bosco
             Gostei da experiência de poder ajudar no trabalho e da ideia que elas tiveram em transformar algo que está
             no do dia a dia das pessoas em algo sustentável"</p>
@@ -77,7 +78,7 @@
         </div>
 
         <div class="feedback">
-          <img src="bianca.jpeg" alt="bianca">
+          <img src="imagens/bianca.jpeg" alt="bianca">
           <p>"Bianca, estudante do IFC-Campus Ibirama
             Os cosméticos são realmente muito bons e são uma nova forma de aprender sobre sustentabilidade, além que as
             pessoas podem aprender a fazerem em casa, o que torna bem mais fácil"</p>
@@ -86,7 +87,7 @@
 
 
         <div class="feedback">
-          <img src="arthur.jpeg" alt="arthur">
+          <img src="imagens/arthur.jpeg" alt="arthur">
           <p>"Arthur, estudante da EEB São João Bosco
             O projeto delas foi bem interessante e pensado com muito carinho pelas alunas e pela professora, realmente
             elas se esforçaram muito nesse projeto, ainda mais por ser o último ano na escola"</p>
@@ -94,7 +95,7 @@
         </div>
 
         <div class="feedback">
-          <img src="pablo.jpeg" alt="pablo">
+          <img src="imagens/pablo.jpeg" alt="pablo">
           <p>"Gostei muito do body splash de tangerina com chá concentrado da folha e álcool de cereais. O cheiro é
             refrescante e natural, ótimo para usar no dia a dia. Além disso, os ingredientes são simples e baratos,
             então é um produto que vale muito a pena, porque cuida da pele sem pesar no bolso."</p>
@@ -102,7 +103,7 @@
         </div>
 
         <div class="feedback">
-          <img src="vitorricardo.jpeg" alt="vitorricardo">
+          <img src="imagens/vitorricardo.jpeg" alt="vitorricardo">
           <p>Vitor: “Eu achei muito legal aprender a fazer meus próprios cosméticos. Desde conhecer os ingredientes
             naturais até preparar o esfoliante e a máscara, tudo foi uma experiência nova e divertida.”</p>
 
@@ -121,26 +122,16 @@
   </div>
   </div>
   </div>
-  <script>
-    const abrirModal = document.getElementById('abrir-feedback');
-    const modal = document.getElementById('modalFeedback');
-    const fecharModal = document.getElementById('fecharModal');
 
-    abrirModal.addEventListener('click', function (e) {
-      e.preventDefault();
-      modal.style.display = 'flex';
-    });
+<script src="feedback.js"></script>
+<script>
+  configurarFeedbackModal("abrir-feedback", "modalFeedback", "fecharModal");
+</script>
 
-    fecharModal.addEventListener('click', function () {
-      modal.style.display = 'none';
-    });
-
-    window.addEventListener('click', function (e) {
-      if (e.target === modal) {
-        modal.style.display = 'none';
-      }
-    });
-  </script>
+<footer>
+  <p>&copy; 2025 Cosméticos Naturais</p>
+  <p>Contato: (47) 99646-0350</p>
+</footer>
 
 </body>
 

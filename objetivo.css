@@ -10,7 +10,12 @@ header {
   background-color: #ff787e;
   color: white;
   padding: 30px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 
 .linha-topo {
   display: flex;
@@ -35,6 +40,7 @@ header {
   text-align: center;
   width: 130px;
   transition: background-color 0.2s;
+  transition: all 0.3s ease;
 }
 
 .botao:hover {
@@ -102,4 +108,51 @@ footer {
   text-align: center;
   padding: 15px;
   margin-top: 40px;
+}
+
+.conteudo p,
+.conteudo li {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .menu-vertical {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .botao {
+    width: auto;
+  }
+
+  .titulo-area,
+  .titulo {
+    text-align: center;
+  }
+
+  .produto-container,
+  .dona-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .subtitulo {
+    font-size: 0.95em;
+  }
+
+  .dona, .produto {
+    padding: 15px;
+  }
+
+  .titulo-area h1,
+  .titulo h1 {
+    font-size: 1.6em;
+  }
+}
+
+footer p {
+  margin: 5px 0;
 }
